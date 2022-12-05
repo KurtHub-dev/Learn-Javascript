@@ -1,18 +1,7 @@
 body {
     background-image: url("passing-cars.jpeg.jpg");
     background-size: cover;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif,-apple-system;
-    font-weight: bold;
-    text-align: center;
     height: 100vh;
-}
-
-.container {
-    background: white;
-    max-width: 80%;
-    margin: auto;
-    border: 3px solid black;
-    border-radius: 10px;
 }
 
 h1 {
@@ -27,6 +16,22 @@ h2 {
 }
 
 button {
+    margin:0;
+}
+
+/*Car counter*/
+.container1 {
+    background: white;
+    max-width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif, -apple-system;
+    font-weight: bold;
+    text-align: center;
+}
+
+#increment-btn {
     border: 1px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -35,17 +40,165 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
-}
-
-#increment-btn {
     background: darkred;
 }
 
 #save-btn {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
     background: navy;
 }
 
 #savePast {
     font-weight: bold;
     color: darkgreen;
+}
+
+/*Calculator*/
+.container2 {
+    background: white;
+    max-width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#num1-el {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#num2-el {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#calculator-btn {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: orange;
+}
+
+/*Scoreboard*/
+
+.container3 {
+    position: relative;
+    display: flex;
+    width: 575px;
+    height: 385px;
+    background: #1B244A;
+    margin: auto;
+    border-radius: 5px;
+    border-color: white;
+    border: 10px solid red;
+
+}
+.column1 {
+    width: 50%;
+}
+
+.column2 {
+    width: 50%;
+}
+
+.row3 {
+    margin:0;
+}
+
+.home {
+    margin-left: 69.25px;
+    margin-top: 68px;
+    margin-bottom: 0;
+    width: 149px;
+    height: 36px;
+    color: #EEEEEE;
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35.89px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.guest {
+    margin-left: 69.25px;
+    margin-top: 68px;
+    margin-bottom: 0;
+    width: 149px;
+    height: 36px;
+    color: #EEEEEE;
+    font-family: Verdana;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35.89px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.score {
+    height: 120px;
+    width: 155px;
+    margin-left: 66px;
+    margin-top: 21px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    color: #F94F6D;
+    background: #080001;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 127px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.points-home {
+    position: absolute;
+    height: 45px;
+    width: 155px;
+    top: 271px;
+    left: 70px;
+}
+
+.points-guest {
+    position: absolute;
+    height: 45px;
+    width: 155px;
+    top: 271px;
+    left: 357.5px;
+}
+
+#plus1-btn{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+#plus2-btn{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+#plus3-btn{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
 }

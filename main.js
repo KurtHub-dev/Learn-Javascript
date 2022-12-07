@@ -77,3 +77,10 @@ function plusg3() {
     totalScoreg += 3
     scoreGuest.textContent = totalScoreg
 }
+
+function newgame() {
+    totalScoreh = 0
+    totalScoreg = 0
+    scoreHome.textContent = totalScoreh
+    scoreGuest.textContent = totalScoreg
+}

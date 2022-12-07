@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,14 +7,61 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <!--Car Counter-->
+
+    <div class="container1">
         <h2>Car Counter:</h2>
         <h2 id="counter">0</h2>
         <button id="increment-btn" onclick="plus()">Plus</button>
         <button id="save-btn" onclick="save()">Save</button>
         <p id="savePast">Previous Count: </p>
-        <script src="main.js"></script>
     </div>
+
+    <!--Calculator-->
+
+    <div class="container2">
+        <span id="num1-el"></span>
+        <span id="num2-el"></span>
+        <br>
+        <div>
+            <button id="calculator-btn" onclick="add()">Add</button>
+            <button id="calculator-btn" onclick="subtract()">Subtract</button>
+            <button id="calculator-btn" onclick="divide()">Divide</button>
+            <button id="calculator-btn" onclick="multiply()">Multiply</button>
+        </div>
+        <br>
+        <span id="sum-el">Sum: </span>
+    </div>
+
+    <!--Score Board-->
+    <br>
+    <p class="scoreBoard">Score Board</p>
+    <div class="container3">
+            <div class="column1">
+                <h3 class="home">HOME</h3>
+                <h2 class="score" id="score-home">0</h2>
+                <div class="points-home">
+                    <button id="plus1-btn" onclick="plush1()">+1</button>
+                    <button id="plus2-btn" onclick="plush2()">+2</button>
+                    <button id="plus3-btn" onclick="plush3()">+3</button>
+                </div>
+            </div>
+            <div class="column2">
+                <h3 class="guest">GUEST</h3>
+                <h2 class="score" id="score-guest">0</h2>
+                <div class="points-guest">
+                    <button id="plus1-btn" onclick="plusg1()">+1</button>
+                    <button id="plus2-btn" onclick="plusg2()">+2</button>
+                    <button id="plus3-btn" onclick="plusg3()">+3</button>
+                </div>
+            </div>
+    </div>
+    <div class="row3">
+        <button onclick = "newgame()">New Game</button>
+    </div>
+    <br>
+    <script src="main.js"></script>
 </body>
 
 </html>

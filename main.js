@@ -87,7 +87,7 @@ function newgame() {
 
 //Blackjack
 
-let firstNum = 3
+let firstNum = 10
 let secondNum = 11
 
 let sumCard = firstNum + secondNum

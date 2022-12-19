@@ -84,3 +84,18 @@ function newgame() {
     scoreHome.textContent = totalScoreh
     scoreGuest.textContent = totalScoreg
 }
+
+//Blackjack
+
+let firstNum = 3
+let secondNum = 11
+
+let sumCard = firstNum + secondNum
+
+if (sumCard < 21) {
+    console.log("Do you want to draw another card?")
+} else if (sumCard === 21) {
+    console.log("Congrats! You've won the game!")
+} else if (sumCard > 21) {
+    console.log("You're out of the game!")
+}

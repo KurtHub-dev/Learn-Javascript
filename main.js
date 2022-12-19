@@ -91,11 +91,16 @@ let firstNum = 10
 let secondNum = 11
 
 let sumCard = firstNum + secondNum
+let hasBlackjack = false
+let isAlive = true
+let message = ""
 
-if (sumCard < 21) {
-    console.log("Do you want to draw another card?")
+if (sumCard <= 20) {
+    message = "Do you want to draw another card? 🙂"
 } else if (sumCard === 21) {
-    console.log("Congrats! You've won the game!")
-} else if (sumCard > 21) {
-    console.log("You're out of the game!")
+    message = "Congrats! You've won the game! 🥳"
+    hasBlackjack = true
+} else {
+    message = "You're out of the game! 😭"
+    isAlive = false
 }
